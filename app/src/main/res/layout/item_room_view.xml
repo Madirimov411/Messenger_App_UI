@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/black"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <FrameLayout
+        android:layout_width="56dp"
+        android:layout_height="56dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/circle" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_online"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="end|bottom"
+            android:layout_margin=".5dp"
+            android:background="#3AE341"
+            android:padding="2dp"
+            app:shapeAppearanceOverlay="@style/circle"
+            app:strokeColor="@color/black"
+            app:strokeWidth="3dp" />
+    </FrameLayout>
+    <TextView
+        android:id="@+id/tv_fullname"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mansurbek"
+        android:textColor="@color/white"
+        android:maxWidth="80dp"
+        android:maxLines="2"/>
+
+
+</LinearLayout>
